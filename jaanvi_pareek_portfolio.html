@@ -1,0 +1,957 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jaanvi Pareek | Social Media Strategist & PR Specialist</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Playfair Display & Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            cream: '#FAF8F5',
+                            charcoal: '#1A1A1A',
+                            rose: '#C38A7C',
+                            sand: '#EFEAE4',
+                            muted: '#7A7570'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #FAF8F5;
+            color: #1A1A1A;
+        }
+        .text-stroke {
+            -webkit-text-stroke: 1px #1A1A1A;
+            color: transparent;
+        }
+    </style>
+</head>
+<body class="font-sans antialiased overflow-x-hidden">
+
+    <!-- NAVIGATION HEADER -->
+    <header class="fixed top-0 left-0 w-full bg-brand-cream/90 backdrop-blur-md z-40 border-b border-brand-sand">
+        <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#home" class="font-serif text-xl md:text-2xl font-bold tracking-tight text-brand-charcoal hover:text-brand-rose transition-colors">
+                JAANVI PAREEK
+            </a>
+            
+            <!-- Desktop Nav -->
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium tracking-wide uppercase text-brand-charcoal">
+                <a href="#home" class="hover:text-brand-rose transition-colors">Home</a>
+                <a href="#about" class="hover:text-brand-rose transition-colors">About</a>
+                <a href="#work" class="hover:text-brand-rose transition-colors">Work</a>
+                <a href="#experience" class="hover:text-brand-rose transition-colors">Experience</a>
+                <a href="#skills" class="hover:text-brand-rose transition-colors">Skills</a>
+                <a href="#contact" class="px-5 py-2.5 bg-brand-charcoal text-white hover:bg-brand-rose transition-all rounded-full text-xs">Let's Collaborate</a>
+            </nav>
+
+            <!-- Mobile Nav Toggle -->
+            <button id="mobile-menu-btn" class="md:hidden text-brand-charcoal hover:text-brand-rose focus:outline-none" aria-label="Toggle navigation menu">
+                <i class="fa-solid fa-bars text-xl"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-brand-cream border-b border-brand-sand transition-all duration-300">
+            <nav class="flex flex-col p-6 space-y-4 text-sm font-semibold tracking-wide uppercase">
+                <a href="#home" class="mobile-link hover:text-brand-rose py-2">Home</a>
+                <a href="#about" class="mobile-link hover:text-brand-rose py-2">About</a>
+                <a href="#work" class="mobile-link hover:text-brand-rose py-2">Work</a>
+                <a href="#experience" class="mobile-link hover:text-brand-rose py-2">Experience</a>
+                <a href="#skills" class="mobile-link hover:text-brand-rose py-2">Skills</a>
+                <a href="#contact" class="mobile-link inline-block px-5 py-2.5 bg-brand-charcoal text-white text-center rounded-full text-xs hover:bg-brand-rose transition-all">Let's Collaborate</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="home" class="min-h-screen pt-28 flex items-center relative overflow-hidden">
+        <div class="max-w-6xl mx-auto px-6 py-12 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center w-full z-10">
+            <!-- Hero Left -->
+            <div class="lg:col-span-7 space-y-6">
+                <div class="inline-flex items-center space-x-2 px-3 py-1.5 bg-brand-rose/10 text-brand-rose rounded-full text-xs font-semibold tracking-wider uppercase">
+                    <span class="w-1.5 h-1.5 bg-brand-rose rounded-full animate-pulse"></span>
+                    <span>Available for Key Roles & Freelance</span>
+                </div>
+                
+                <h1 class="font-serif text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight tracking-tight text-brand-charcoal">
+                    Building brands through <span class="italic text-brand-rose font-normal">storytelling</span>, strategy, and social-first content.
+                </h1>
+
+                <p class="text-lg md:text-xl text-brand-muted max-w-xl font-light leading-relaxed">
+                    Social Media Strategist and PR professional who bridges the gap between traditional media, community building, and modern creator culture.
+                </p>
+
+                <div class="flex flex-wrap gap-4 pt-4">
+                    <a href="#work" class="px-8 py-4 bg-brand-charcoal text-white rounded-full font-medium text-sm hover:bg-brand-rose hover:-translate-y-0.5 transition-all shadow-lg shadow-brand-charcoal/10 flex items-center gap-2">
+                        <span>View My Work</span>
+                        <i class="fa-solid fa-arrow-right-long text-xs"></i>
+                    </a>
+                    <a href="#contact" class="px-8 py-4 border border-brand-charcoal text-brand-charcoal rounded-full font-medium text-sm hover:bg-brand-sand transition-all flex items-center gap-2">
+                        <span>Get In Touch</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Hero Right (Interactive Key Metrics Highlight) -->
+            <div class="lg:col-span-5 relative">
+                <div class="relative z-10 p-8 bg-brand-sand/60 rounded-3xl border border-brand-sand/80 space-y-8 backdrop-blur-sm">
+                    <div class="absolute -top-6 -right-6 w-24 h-24 bg-brand-rose/20 rounded-full filter blur-xl"></div>
+                    
+                    <div class="flex items-center justify-between">
+                        <span class="font-serif text-lg italic text-brand-rose font-semibold">Key Highlights</span>
+                        <span class="text-xs bg-brand-charcoal text-white px-2 py-0.5 rounded uppercase font-semibold">Active</span>
+                    </div>
+
+                    <!-- Metric 1 -->
+                    <div class="border-b border-brand-charcoal/10 pb-4">
+                        <div class="flex items-baseline space-x-2">
+                            <span class="font-serif text-5xl font-bold text-brand-charcoal">1.2M+</span>
+                            <span class="text-brand-rose text-sm font-semibold tracking-wide"><i class="fa-solid fa-arrow-up"></i> Reach</span>
+                        </div>
+                        <p class="text-xs text-brand-muted uppercase tracking-wider mt-1">Organic reach on custom social content campaigns</p>
+                    </div>
+
+                    <!-- Metric 2 -->
+                    <div class="border-b border-brand-charcoal/10 pb-4">
+                        <div class="flex items-baseline space-x-2">
+                            <span class="font-serif text-5xl font-bold text-brand-charcoal">567K+</span>
+                            <span class="text-brand-rose text-sm font-semibold tracking-wide"><i class="fa-solid fa-eye"></i> Views</span>
+                        </div>
+                        <p class="text-xs text-brand-muted uppercase tracking-wider mt-1">Aesthetic Pinterest content visibility built organically</p>
+                    </div>
+
+                    <!-- Metric 3 -->
+                    <div>
+                        <div class="flex items-baseline space-x-2">
+                            <span class="font-serif text-5xl font-bold text-brand-charcoal">50+</span>
+                            <span class="text-brand-rose text-sm font-semibold tracking-wide">Reels</span>
+                        </div>
+                        <p class="text-xs text-brand-muted uppercase tracking-wider mt-1">Designed, scripted, styled, and launched from scratch</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Geometric accents -->
+        <div class="absolute bottom-0 left-0 w-full h-24 bg-gradient-to-t from-brand-sand/20 to-transparent pointer-events-none"></div>
+    </section>
+
+    <!-- ABOUT ME SECTION -->
+    <section id="about" class="py-24 bg-brand-sand/20 relative">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+                
+                <!-- Sticky Left Text -->
+                <div class="lg:col-span-5 lg:sticky lg:top-28 space-y-4">
+                    <span class="text-xs font-semibold uppercase tracking-widest text-brand-rose">The Philosophy</span>
+                    <h2 class="font-serif text-3xl md:text-4xl font-bold leading-tight text-brand-charcoal">
+                        Why choose someone who only knows social media, when you can have a <span class="italic text-brand-rose font-normal">PR-trained creator</span>?
+                    </h2>
+                    <p class="text-brand-muted text-sm leading-relaxed max-w-sm">
+                        Brands today fail when their PR doesn't talk to their social media, or when their content lacks strategic PR framing. I fuse both worlds.
+                    </p>
+                </div>
+
+                <!-- Right Detailed Bio -->
+                <div class="lg:col-span-7 space-y-8">
+                    <div class="p-8 md:p-10 bg-white rounded-3xl border border-brand-sand shadow-sm space-y-6">
+                        <h3 class="font-serif text-2xl font-semibold text-brand-charcoal">Hey, I'm Jaanvi Pareek</h3>
+                        
+                        <p class="text-brand-charcoal/80 leading-relaxed text-base font-light">
+                            I am a dynamic Social Media Strategist and Brand Communication Specialist based in Jaipur, Rajasthan. With a dedicated academic background in Journalism and Mass Communication and extensive agency-grade brand experience, I create multi-platform content ecosystems designed for high engagement and brand distinction.
+                        </p>
+
+                        <p class="text-brand-charcoal/80 leading-relaxed text-base font-light">
+                            Through executing real campaigns for major D2C brands, organizing massive university event strategies, and managing my own personal brand, I understand creator culture inside out. I know how to frame content that satisfies strict brand standards while remaining organic and magnetic for audiences on Instagram, Pinterest, and LinkedIn.
+                        </p>
+
+                        <!-- Pillars Grid -->
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
+                            <div class="p-4 bg-brand-cream rounded-xl border border-brand-sand/50">
+                                <span class="block text-brand-rose text-lg mb-1"><i class="fa-solid fa-bullseye"></i></span>
+                                <span class="block font-semibold text-xs text-brand-charcoal uppercase tracking-wider">Aesthetic Instinct</span>
+                                <span class="block text-xs text-brand-muted mt-1">Specialized in lifestyle, fashion, and jewelry content storytelling.</span>
+                            </div>
+                            <div class="p-4 bg-brand-cream rounded-xl border border-brand-sand/50">
+                                <span class="block text-brand-rose text-lg mb-1"><i class="fa-solid fa-newspaper"></i></span>
+                                <span class="block font-semibold text-xs text-brand-charcoal uppercase tracking-wider">PR Foundations</span>
+                                <span class="block text-xs text-brand-muted mt-1">Trained in writing media pitches, press releases, and building relations.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS / CASE STUDIES SECTION (Interactive) -->
+    <section id="work" class="py-24">
+        <div class="max-w-6xl mx-auto px-6">
+            
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 space-y-4 md:space-y-0">
+                <div>
+                    <span class="text-xs font-semibold uppercase tracking-widest text-brand-rose">Case Studies</span>
+                    <h2 class="font-serif text-4xl font-bold mt-1 text-brand-charcoal">Selected Work</h2>
+                </div>
+                <!-- Project Quick Filters -->
+                <div class="flex flex-wrap gap-2 text-xs font-semibold tracking-wider uppercase">
+                    <button class="filter-btn px-5 py-2.5 bg-brand-charcoal text-white rounded-full transition-all" data-filter="all">All Projects</button>
+                    <button class="filter-btn px-5 py-2.5 bg-brand-sand text-brand-charcoal hover:bg-brand-rose hover:text-white rounded-full transition-all" data-filter="social">Social Growth</button>
+                    <button class="filter-btn px-5 py-2.5 bg-brand-sand text-brand-charcoal hover:bg-brand-rose hover:text-white rounded-full transition-all" data-filter="pr">PR & Event Outreach</button>
+                </div>
+            </div>
+
+            <!-- Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Case Study 1: KuberBox -->
+                <div class="project-card group bg-white rounded-3xl border border-brand-sand overflow-hidden flex flex-col justify-between transition-all duration-300 hover:shadow-xl hover:-translate-y-1" data-category="social">
+                    <div>
+                        <!-- Aesthetic Banner -->
+                        <div class="h-48 bg-gradient-to-br from-brand-rose/20 to-brand-sand flex items-center justify-center p-6 relative overflow-hidden">
+                            <span class="font-serif text-3xl font-bold italic text-brand-rose/40 absolute -bottom-4 -left-4 select-none transform -rotate-12">EST. HIGH AESTHETIC</span>
+                            <i class="fa-solid fa-gem text-5xl text-brand-rose/80 transform group-hover:scale-110 transition-transform duration-500"></i>
+                        </div>
+                        <div class="p-6 space-y-4">
+                            <span class="inline-block px-3 py-1 bg-brand-rose/10 text-brand-rose rounded-full text-[10px] font-bold tracking-widest uppercase">E-Commerce Jewelry</span>
+                            <h3 class="font-serif text-2xl font-bold text-brand-charcoal group-hover:text-brand-rose transition-colors">KuberBox Content Strategy</h3>
+                            <p class="text-xs text-brand-muted leading-relaxed line-clamp-3">
+                                Scaled Pinterest visibility and launched highly aesthetic, narrative-driven Instagram reels targeting premium jewelry buyers.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <div class="border-t border-brand-sand pt-4 flex justify-between items-center">
+                            <span class="text-xs font-bold text-brand-rose">1.2M+ Reach Achieved</span>
+                            <button onclick="openModal('kuberbox')" class="text-xs font-semibold text-brand-charcoal hover:text-brand-rose flex items-center gap-1 transition-colors">
+                                View Case <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Case Study 2: JECRC Flagships -->
+                <div class="project-card group bg-white rounded-3xl border border-brand-sand overflow-hidden flex flex-col justify-between transition-all duration-300 hover:shadow-xl hover:-translate-y-1" data-category="pr">
+                    <div>
+                        <div class="h-48 bg-gradient-to-br from-brand-charcoal to-brand-muted flex items-center justify-center p-6 relative overflow-hidden">
+                            <span class="font-serif text-3xl font-bold italic text-white/10 absolute -top-4 -right-4 select-none transform rotate-12">LIVE OUTREACH</span>
+                            <i class="fa-solid fa-microphone text-5xl text-brand-sand/60 transform group-hover:scale-110 transition-transform duration-500"></i>
+                        </div>
+                        <div class="p-6 space-y-4">
+                            <span class="inline-block px-3 py-1 bg-brand-rose/10 text-brand-rose rounded-full text-[10px] font-bold tracking-widest uppercase">Event PR & Marketing</span>
+                            <h3 class="font-serif text-2xl font-bold text-brand-charcoal group-hover:text-brand-rose transition-colors">Strategic Campus Flagships</h3>
+                            <p class="text-xs text-brand-muted leading-relaxed line-clamp-3">
+                                Led comprehensive public relations, media coordination, and campaign rollouts for flagship university events: Rhythm, Protsahan, and Innov8.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <div class="border-t border-brand-sand pt-4 flex justify-between items-center">
+                            <span class="text-xs font-bold text-brand-rose">Full Campaign Run</span>
+                            <button onclick="openModal('jecrc')" class="text-xs font-semibold text-brand-charcoal hover:text-brand-rose flex items-center gap-1 transition-colors">
+                                View Case <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Case Study 3: LinkedIn Calendar -->
+                <div class="project-card group bg-white rounded-3xl border border-brand-sand overflow-hidden flex flex-col justify-between transition-all duration-300 hover:shadow-xl hover:-translate-y-1" data-category="social">
+                    <div>
+                        <div class="h-48 bg-gradient-to-br from-brand-sand to-brand-cream flex items-center justify-center p-6 relative overflow-hidden">
+                            <span class="font-serif text-3xl font-bold italic text-brand-rose/20 absolute -bottom-4 -right-4 select-none transform -rotate-12">THOUGHT LEADERSHIP</span>
+                            <i class="fa-solid fa-calendar-alt text-5xl text-brand-rose/80 transform group-hover:scale-110 transition-transform duration-500"></i>
+                        </div>
+                        <div class="p-6 space-y-4">
+                            <span class="inline-block px-3 py-1 bg-brand-rose/10 text-brand-rose rounded-full text-[10px] font-bold tracking-widest uppercase">Personal Branding</span>
+                            <h3 class="font-serif text-2xl font-bold text-brand-charcoal group-hover:text-brand-rose transition-colors">LinkedIn Thought Leadership</h3>
+                            <p class="text-xs text-brand-muted leading-relaxed line-clamp-3">
+                                Structured a intensive 30-day corporate content strategy optimized for community engagement, outreach coordination, and positioning.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <div class="border-t border-brand-sand pt-4 flex justify-between items-center">
+                            <span class="text-xs font-bold text-brand-rose">30-Day Growth Engine</span>
+                            <button onclick="openModal('linkedin')" class="text-xs font-semibold text-brand-charcoal hover:text-brand-rose flex items-center gap-1 transition-colors">
+                                View Case <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CASE STUDY MODALS -->
+    <!-- KuberBox Modal -->
+    <div id="modal-kuberbox" class="fixed inset-0 bg-brand-charcoal/80 backdrop-blur-md z-50 hidden flex items-center justify-center p-4">
+        <div class="bg-brand-cream max-w-2xl w-full rounded-3xl overflow-hidden shadow-2xl border border-brand-sand max-h-[90vh] flex flex-col">
+            <!-- Header -->
+            <div class="p-6 border-b border-brand-sand flex justify-between items-center">
+                <span class="text-xs font-bold text-brand-rose uppercase tracking-wider">Growth Case Study</span>
+                <button onclick="closeModal('kuberbox')" class="w-8 h-8 rounded-full bg-brand-sand/50 hover:bg-brand-rose/20 flex items-center justify-center text-brand-charcoal transition-colors">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+            <!-- Body -->
+            <div class="p-8 overflow-y-auto space-y-6 text-sm text-brand-charcoal">
+                <h3 class="font-serif text-3xl font-bold">KuberBox Premium E-Commerce Growth</h3>
+                <p class="text-brand-muted italic">How an aesthetic social-first approach unlocked over 1.2M+ organic views for an online jewelry brand.</p>
+                
+                <div class="space-y-4">
+                    <h4 class="font-semibold text-brand-charcoal uppercase tracking-wider text-xs border-b border-brand-sand pb-1"><span class="text-brand-rose">01.</span> The Challenge</h4>
+                    <p class="leading-relaxed font-light">
+                        KuberBox, a modern premium jewelry platform, was seeking to deepen its brand equity and connect with younger consumer brackets on visual platforms (Instagram, Pinterest) without relying entirely on expensive ad campaigns. The brand needed high-vibe aesthetic continuity and visual authority.
+                    </p>
+                </div>
+
+                <div class="space-y-4">
+                    <h4 class="font-semibold text-brand-charcoal uppercase tracking-wider text-xs border-b border-brand-sand pb-1"><span class="text-brand-rose">02.</span> Core Strategy</h4>
+                    <ul class="list-disc list-inside space-y-2 font-light leading-relaxed">
+                        <li><strong>Strategic Ideation:</strong> Built an outdoor and indoor premium product shoot framework based around emotional storytelling.</li>
+                        <li><strong>Continuous Reel Output:</strong> Storyboarded, designed, and executed 50+ aesthetic reels.</li>
+                        <li><strong>Pinterest Integration:</strong> Used Pinterest boards as highly searchable visual hubs targeted towards bride-to-be niches.</li>
+                        <li><strong>UGC & Influencer Collaborations:</strong> Strategically activated micro-creators, coordinating creative deliverables that aligned with KuberBox's luxury image.</li>
+                    </ul>
+                </div>
+
+                <div class="space-y-4">
+                    <h4 class="font-semibold text-brand-charcoal uppercase tracking-wider text-xs border-b border-brand-sand pb-1"><span class="text-brand-rose">03.</span> Key Outcomes</h4>
+                    <div class="grid grid-cols-3 gap-4 text-center">
+                        <div class="p-3 bg-brand-sand/40 rounded-xl">
+                            <span class="block font-serif text-xl font-bold text-brand-rose">1.2M+</span>
+                            <span class="text-[10px] text-brand-muted uppercase tracking-wider font-semibold">Total Reach</span>
+                        </div>
+                        <div class="p-3 bg-brand-sand/40 rounded-xl">
+                            <span class="block font-serif text-xl font-bold text-brand-rose">567K+</span>
+                            <span class="text-[10px] text-brand-muted uppercase tracking-wider font-semibold">Pinterest Views</span>
+                        </div>
+                        <div class="p-3 bg-brand-sand/40 rounded-xl">
+                            <span class="block font-serif text-xl font-bold text-brand-rose">50+</span>
+                            <span class="text-[10px] text-brand-muted uppercase tracking-wider font-semibold">Reels Designed</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JECRC Modal -->
+    <div id="modal-jecrc" class="fixed inset-0 bg-brand-charcoal/80 backdrop-blur-md z-50 hidden flex items-center justify-center p-4">
+        <div class="bg-brand-cream max-w-2xl w-full rounded-3xl overflow-hidden shadow-2xl border border-brand-sand max-h-[90vh] flex flex-col">
+            <!-- Header -->
+            <div class="p-6 border-b border-brand-sand flex justify-between items-center">
+                <span class="text-xs font-bold text-brand-rose uppercase tracking-wider">PR & Outreach Case Study</span>
+                <button onclick="closeModal('jecrc')" class="w-8 h-8 rounded-full bg-brand-sand/50 hover:bg-brand-rose/20 flex items-center justify-center text-brand-charcoal transition-colors">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+            <!-- Body -->
+            <div class="p-8 overflow-y-auto space-y-6 text-sm text-brand-charcoal">
+                <h3 class="font-serif text-3xl font-bold">Strategic Campus Flagships (Rhythm, Protsahan, Innov8)</h3>
+                <p class="text-brand-muted italic">Commanding media coverage and audience visibility for some of Rajasthan's biggest university celebrations.</p>
+                
+                <div class="space-y-4">
+                    <h4 class="font-semibold text-brand-charcoal uppercase tracking-wider text-xs border-b border-brand-sand pb-1"><span class="text-brand-rose">01.</span> The Challenge</h4>
+                    <p class="leading-relaxed font-light">
+                        To elevate JECRC University’s three flagships (the cultural, sport, and innovation fests) out of ordinary campus limits and build major local, regional, and national buzz, increasing student registrations and high-caliber corporate sponsorship.
+                    </p>
+                </div>
+
+                <div class="space-y-4">
+                    <h4 class="font-semibold text-brand-charcoal uppercase tracking-wider text-xs border-b border-brand-sand pb-1"><span class="text-brand-rose">02.</span> Core Strategy</h4>
+                    <ul class="list-disc list-inside space-y-2 font-light leading-relaxed">
+                        <li><strong>Media Relations:</strong> Managed press releases, curated high-value media kits, and personally pitched leading Jaipur journalists.</li>
+                        <li><strong>Campus Influencer Strategy:</strong> Mobilized student creator groups to build interactive TikTok/Reel trends.</li>
+                        <li><strong>Crisis Control:</strong> Served as direct point-of-contact during live high-profile concerts to manage media queries and unexpected coordination challenges seamlessly.</li>
+                    </ul>
+                </div>
+
+                <div class="space-y-4">
+                    <h4 class="font-semibold text-brand-charcoal uppercase tracking-wider text-xs border-b border-brand-sand pb-1"><span class="text-brand-rose">03.</span> Key Outcomes</h4>
+                    <div class="grid grid-cols-2 gap-4 text-center">
+                        <div class="p-3 bg-brand-sand/40 rounded-xl">
+                            <span class="block font-serif text-xl font-bold text-brand-rose">10+ Media Outlets</span>
+                            <span class="text-[10px] text-brand-muted uppercase tracking-wider font-semibold">Press Coverages Secured</span>
+                        </div>
+                        <div class="p-3 bg-brand-sand/40 rounded-xl">
+                            <span class="block font-serif text-xl font-bold text-brand-rose">Multi-Thousand</span>
+                            <span class="text-[10px] text-brand-muted uppercase tracking-wider font-semibold">Registrations Scaled</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- LinkedIn Modal -->
+    <div id="modal-linkedin" class="fixed inset-0 bg-brand-charcoal/80 backdrop-blur-md z-50 hidden flex items-center justify-center p-4">
+        <div class="bg-brand-cream max-w-2xl w-full rounded-3xl overflow-hidden shadow-2xl border border-brand-sand max-h-[90vh] flex flex-col">
+            <!-- Header -->
+            <div class="p-6 border-b border-brand-sand flex justify-between items-center">
+                <span class="text-xs font-bold text-brand-rose uppercase tracking-wider">Thought Leadership Strategy</span>
+                <button onclick="closeModal('linkedin')" class="w-8 h-8 rounded-full bg-brand-sand/50 hover:bg-brand-rose/20 flex items-center justify-center text-brand-charcoal transition-colors">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+            <!-- Body -->
+            <div class="p-8 overflow-y-auto space-y-6 text-sm text-brand-charcoal">
+                <h3 class="font-serif text-3xl font-bold">30-Day Content Framework for LinkedIn</h3>
+                <p class="text-brand-muted italic">Building professional authority and securing strong recruiter traction through strategic written content.</p>
+                
+                <div class="space-y-4">
+                    <h4 class="font-semibold text-brand-charcoal uppercase tracking-wider text-xs border-b border-brand-sand pb-1"><span class="text-brand-rose">01.</span> The Challenge</h4>
+                    <p class="leading-relaxed font-light">
+                        To demonstrate practical command of corporate communication and creator trends by establishing a personal organic marketing hub on LinkedIn.
+                    </p>
+                </div>
+
+                <div class="space-y-4">
+                    <h4 class="font-semibold text-brand-charcoal uppercase tracking-wider text-xs border-b border-brand-sand pb-1"><span class="text-brand-rose">02.</span> Core Strategy</h4>
+                    <ul class="list-disc list-inside space-y-2 font-light leading-relaxed">
+                        <li><strong>Content Slices:</strong> Structured regular topics around "Creative Campaign Teardowns," "Modern Brand-Influencer Synergies," and "Aesthetic Social Tactics."</li>
+                        <li><strong>Visual Assets:</strong> Produced high-retention carousels focusing on D2C brand marketing insights.</li>
+                        <li><strong>Engagement Funnels:</strong> Engaged actively on profiles of leading CMOs and founders to maximize secondary network impressions.</li>
+                    </ul>
+                </div>
+
+                <div class="space-y-4">
+                    <h4 class="font-semibold text-brand-charcoal uppercase tracking-wider text-xs border-b border-brand-sand pb-1"><span class="text-brand-rose">03.</span> Key Outcomes</h4>
+                    <div class="p-4 bg-brand-sand/40 rounded-xl text-center">
+                        <span class="block font-serif text-xl font-bold text-brand-rose">100% Organic Engagement Acceleration</span>
+                        <p class="text-xs text-brand-muted mt-1 leading-relaxed">Established valuable direct dialogues with high-tier agency professionals and founders looking for strategic social hands.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- EXPERIENCE SECTION -->
+    <section id="experience" class="py-24 bg-brand-sand/10">
+        <div class="max-w-6xl mx-auto px-6">
+            
+            <div class="mb-16">
+                <span class="text-xs font-semibold uppercase tracking-widest text-brand-rose">Professional Journey</span>
+                <h2 class="font-serif text-4xl font-bold mt-1 text-brand-charcoal">Work Experience</h2>
+            </div>
+
+            <!-- Experience Timeline -->
+            <div class="space-y-12">
+                
+                <!-- Role 1 -->
+                <div class="grid grid-cols-1 md:grid-cols-12 gap-6 pb-12 border-b border-brand-sand">
+                    <div class="md:col-span-4">
+                        <span class="text-xs font-bold text-brand-rose uppercase tracking-widest">KuberBox</span>
+                        <h3 class="font-serif text-xl font-bold text-brand-charcoal mt-1">Social Media Strategist & Content Creator</h3>
+                        <p class="text-xs text-brand-muted mt-1">Full-Time Experience</p>
+                    </div>
+                    <div class="md:col-span-8">
+                        <ul class="space-y-3 text-sm text-brand-charcoal/95 font-light leading-relaxed">
+                            <li class="flex items-start gap-3">
+                                <span class="text-brand-rose mt-1"><i class="fa-solid fa-circle-check text-xs"></i></span>
+                                <span>Engineered cross-platform social identity across Instagram and Pinterest, creating 50+ aesthetic reels in-house from creative concept to final cut.</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="text-brand-rose mt-1"><i class="fa-solid fa-circle-check text-xs"></i></span>
+                                <span>Spearheaded a highly optimized Pinterest growth plan that successfully generated over 567K+ organic platform impressions.</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="text-brand-rose mt-1"><i class="fa-solid fa-circle-check text-xs"></i></span>
+                                <span>Orchestrated end-to-end creator collaborations, micro-influencer product seeds, and indoor/outdoor visual styling frameworks.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Role 2 -->
+                <div class="grid grid-cols-1 md:grid-cols-12 gap-6 pb-12 border-b border-brand-sand">
+                    <div class="md:col-span-4">
+                        <span class="text-xs font-bold text-brand-rose uppercase tracking-widest">Ampliverse</span>
+                        <h3 class="font-serif text-xl font-bold text-brand-charcoal mt-1">PR Associate Intern</h3>
+                        <p class="text-xs text-brand-muted mt-1">June 2025 - September 2025</p>
+                    </div>
+                    <div class="md:col-span-8">
+                        <ul class="space-y-3 text-sm text-brand-charcoal/95 font-light leading-relaxed">
+                            <li class="flex items-start gap-3">
+                                <span class="text-brand-rose mt-1"><i class="fa-solid fa-circle-check text-xs"></i></span>
+                                <span>Coordinated press databases, structured media lists, and drafted targeted press distributions for prominent client campaigns.</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="text-brand-rose mt-1"><i class="fa-solid fa-circle-check text-xs"></i></span>
+                                <span>Conceptualized SEO-driven social pieces and produced corporate carousel slides focusing on agency authority.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Role 3 -->
+                <div class="grid grid-cols-1 md:grid-cols-12 gap-6 pb-12 border-b border-brand-sand">
+                    <div class="md:col-span-4">
+                        <span class="text-xs font-bold text-brand-rose uppercase tracking-widest">JECRC University (T&P)</span>
+                        <h3 class="font-serif text-xl font-bold text-brand-charcoal mt-1">Student Placement Coordinator</h3>
+                        <p class="text-xs text-brand-muted mt-1">June 2025 - Present</p>
+                    </div>
+                    <div class="md:col-span-8">
+                        <ul class="space-y-3 text-sm text-brand-charcoal/95 font-light leading-relaxed">
+                            <li class="flex items-start gap-3">
+                                <span class="text-brand-rose mt-1"><i class="fa-solid fa-circle-check text-xs"></i></span>
+                                <span>Executed multi-tier recruiter communication schedules, expanding lead outreach to regional companies and national firms.</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="text-brand-rose mt-1"><i class="fa-solid fa-circle-check text-xs"></i></span>
+                                <span>Refined relationship management touchpoints between executive recruiters and placement candidate rosters.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Role 4 -->
+                <div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+                    <div class="md:col-span-4">
+                        <span class="text-xs font-bold text-brand-rose uppercase tracking-widest">Student Council, JECRC</span>
+                        <h3 class="font-serif text-xl font-bold text-brand-charcoal mt-1">PR Lead / Member</h3>
+                        <p class="text-xs text-brand-muted mt-1">November 2023 - Present</p>
+                    </div>
+                    <div class="md:col-span-8">
+                        <ul class="space-y-3 text-sm text-brand-charcoal/95 font-light leading-relaxed">
+                            <li class="flex items-start gap-3">
+                                <span class="text-brand-rose mt-1"><i class="fa-solid fa-circle-check text-xs"></i></span>
+                                <span>Managed comprehensive multi-channel promotion for high-traction flagship university programs, organizing key local media integrations.</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="text-brand-rose mt-1"><i class="fa-solid fa-circle-check text-xs"></i></span>
+                                <span>Oversaw audience relations and structured real-time crisis statements for event communication groups.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CUSTOM INSTAGRAM PILARS & PORTFOLIO DIRECTION (Creative Visual Showcase) -->
+    <section class="py-24 bg-brand-charcoal text-brand-cream relative overflow-hidden">
+        <!-- Background graphics -->
+        <div class="absolute -bottom-16 -left-16 w-64 h-64 bg-brand-rose/10 rounded-full filter blur-3xl"></div>
+        
+        <div class="max-w-6xl mx-auto px-6 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Left Details -->
+                <div class="lg:col-span-5 space-y-6">
+                    <span class="text-xs font-semibold uppercase tracking-widest text-brand-rose">Creative Advantage</span>
+                    <h2 class="font-serif text-4xl font-bold leading-tight">The Aesthetic Creator Framework</h2>
+                    <p class="text-brand-cream/80 leading-relaxed text-sm font-light">
+                        I do not just theorize social trends. I curate an active creator hub on Instagram <a href="https://instagram.com/notyourrinfluencerr" target="_blank" class="text-brand-rose underline hover:text-white transition-colors">@notyourrinfluencerr</a>. This workspace provides real-world experimental insights on content hooks, aesthetics, and modern culture.
+                    </p>
+                    
+                    <!-- Core Content Pillars -->
+                    <div class="space-y-4 pt-2">
+                        <div class="flex items-start gap-3">
+                            <span class="text-brand-rose mt-0.5"><i class="fa-solid fa-hashtag"></i></span>
+                            <div>
+                                <span class="block font-medium text-xs uppercase tracking-wider">Social Growth Insights</span>
+                                <span class="text-xs text-brand-cream/60">Sharing strategic growth hooks, visual design systems, and Pinterest tactics.</span>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <span class="text-brand-rose mt-0.5"><i class="fa-solid fa-camera"></i></span>
+                            <div>
+                                <span class="block font-medium text-xs uppercase tracking-wider">Lifestyle Aesthetics</span>
+                                <span class="text-xs text-brand-cream/60">Curated moodboards, day-in-the-life sequences, and styled fashion brand layouts.</span>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <span class="text-brand-rose mt-0.5"><i class="fa-solid fa-circle-nodes"></i></span>
+                            <div>
+                                <span class="block font-medium text-xs uppercase tracking-wider">Communication & Confidence</span>
+                                <span class="text-xs text-brand-cream/60">Public speaking pointers, hosting highlights, and communication strategies.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Visual Concept Grid -->
+                <div class="lg:col-span-7">
+                    <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                        
+                        <!-- Visual Card 1 -->
+                        <div class="p-6 bg-white/5 border border-white/10 rounded-2xl space-y-3 flex flex-col justify-between aspect-square">
+                            <span class="text-2xl text-brand-rose"><i class="fa-solid fa-palette"></i></span>
+                            <div>
+                                <span class="block text-xs font-semibold uppercase tracking-wider">Visual Palette</span>
+                                <span class="block text-[10px] text-brand-cream/40 mt-1">Tone curation & styleboards</span>
+                            </div>
+                        </div>
+
+                        <!-- Visual Card 2 -->
+                        <div class="p-6 bg-white/5 border border-white/10 rounded-2xl space-y-3 flex flex-col justify-between aspect-square">
+                            <span class="text-2xl text-brand-rose"><i class="fa-solid fa-film"></i></span>
+                            <div>
+                                <span class="block text-xs font-semibold uppercase tracking-wider">Reels Logic</span>
+                                <span class="block text-[10px] text-brand-cream/40 mt-1">High-retention video formats</span>
+                            </div>
+                        </div>
+
+                        <!-- Visual Card 3 -->
+                        <div class="p-6 bg-white/5 border border-white/10 rounded-2xl space-y-3 flex flex-col justify-between aspect-square">
+                            <span class="text-2xl text-brand-rose"><i class="fa-solid fa-users"></i></span>
+                            <div>
+                                <span class="block text-xs font-semibold uppercase tracking-wider">Influencer Sync</span>
+                                <span class="block text-[10px] text-brand-cream/40 mt-1">Sourcing authentic creators</span>
+                            </div>
+                        </div>
+
+                        <!-- Visual Card 4 -->
+                        <div class="p-6 bg-white/5 border border-white/10 rounded-2xl space-y-3 flex flex-col justify-between aspect-square">
+                            <span class="text-2xl text-brand-rose"><i class="fa-solid fa-file-invoice"></i></span>
+                            <div>
+                                <span class="block text-xs font-semibold uppercase tracking-wider">PR Pitches</span>
+                                <span class="block text-[10px] text-brand-cream/40 mt-1">High-impact media hooks</span>
+                            </div>
+                        </div>
+
+                        <!-- Visual Card 5 -->
+                        <div class="p-6 bg-white/5 border border-white/10 rounded-2xl space-y-3 flex flex-col justify-between aspect-square">
+                            <span class="text-2xl text-brand-rose"><i class="fa-solid fa-arrow-trend-up"></i></span>
+                            <div>
+                                <span class="block text-xs font-semibold uppercase tracking-wider">Growth Data</span>
+                                <span class="block text-[10px] text-brand-cream/40 mt-1">Analytics over vanity metrics</span>
+                            </div>
+                        </div>
+
+                        <!-- Visual Card 6 -->
+                        <div class="p-6 bg-white/5 border border-white/10 rounded-2xl space-y-3 flex flex-col justify-between aspect-square">
+                            <span class="text-2xl text-brand-rose"><i class="fa-solid fa-compass"></i></span>
+                            <div>
+                                <span class="block text-xs font-semibold uppercase tracking-wider">Storytelling</span>
+                                <span class="block text-[10px] text-brand-cream/40 mt-1">Compelling written narratives</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills" class="py-24">
+        <div class="max-w-6xl mx-auto px-6">
+            
+            <div class="mb-16">
+                <span class="text-xs font-semibold uppercase tracking-widest text-brand-rose">Competence Matrix</span>
+                <h2 class="font-serif text-4xl font-bold mt-1 text-brand-charcoal">Core Specializations</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Category 1 -->
+                <div class="p-8 bg-brand-sand/30 rounded-3xl border border-brand-sand/60 space-y-6">
+                    <span class="text-xs font-bold text-brand-rose uppercase tracking-widest block border-b border-brand-charcoal/10 pb-2">Social Strategy</span>
+                    <ul class="space-y-3">
+                        <li class="flex items-center justify-between text-sm">
+                            <span class="font-medium">Pinterest SEO & Strategy</span>
+                            <span class="text-xs bg-brand-sand px-2 py-0.5 rounded text-brand-muted">Expert</span>
+                        </li>
+                        <li class="flex items-center justify-between text-sm">
+                            <span class="font-medium">Short-form Video Production</span>
+                            <span class="text-xs bg-brand-sand px-2 py-0.5 rounded text-brand-muted">Advanced</span>
+                        </li>
+                        <li class="flex items-center justify-between text-sm">
+                            <span class="font-medium">Aesthetic Photo Shoots</span>
+                            <span class="text-xs bg-brand-sand px-2 py-0.5 rounded text-brand-muted">Creative</span>
+                        </li>
+                        <li class="flex items-center justify-between text-sm">
+                            <span class="font-medium">UGC Ideation & Strategy</span>
+                            <span class="text-xs bg-brand-sand px-2 py-0.5 rounded text-brand-muted">Advanced</span>
+                        </li>
+                        <li class="flex items-center justify-between text-sm">
+                            <span class="font-medium">Organic Growth Funnels</span>
+                            <span class="text-xs bg-brand-sand px-2 py-0.5 rounded text-brand-muted">Expert</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Category 2 -->
+                <div class="p-8 bg-brand-sand/30 rounded-3xl border border-brand-sand/60 space-y-6">
+                    <span class="text-xs font-bold text-brand-rose uppercase tracking-widest block border-b border-brand-charcoal/10 pb-2">PR & Communications</span>
+                    <ul class="space-y-3">
+                        <li class="flex items-center justify-between text-sm">
+                            <span class="font-medium">Press Release Drafts</span>
+                            <span class="text-xs bg-brand-sand px-2 py-0.5 rounded text-brand-muted">Expert</span>
+                        </li>
+                        <li class="flex items-center justify-between text-sm">
+                            <span class="font-medium">Media Pitch Development</span>
+                            <span class="text-xs bg-brand-sand px-2 py-0.5 rounded text-brand-muted">Advanced</span>
+                        </li>
+                        <li class="flex items-center justify-between text-sm">
+                            <span class="font-medium">Public Event Hosting</span>
+                            <span class="text-xs bg-brand-sand px-2 py-0.5 rounded text-brand-muted">Expert</span>
+                        </li>
+                        <li class="flex items-center justify-between text-sm">
+                            <span class="font-medium">B2B Corporate Relations</span>
+                            <span class="text-xs bg-brand-sand px-2 py-0.5 rounded text-brand-muted">Advanced</span>
+                        </li>
+                        <li class="flex items-center justify-between text-sm">
+                            <span class="font-medium">Crisis Coordination</span>
+                            <span class="text-xs bg-brand-sand px-2 py-0.5 rounded text-brand-muted">Advanced</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Category 3 -->
+                <div class="p-8 bg-brand-sand/30 rounded-3xl border border-brand-sand/60 space-y-6">
+                    <span class="text-xs font-bold text-brand-rose uppercase tracking-widest block border-b border-brand-charcoal/10 pb-2">Tools of Trade</span>
+                    <ul class="space-y-3">
+                        <li class="flex items-center justify-between text-sm">
+                            <span class="font-medium">Canva</span>
+                            <span class="text-xs bg-brand-sand px-2 py-0.5 rounded text-brand-muted">Advanced</span>
+                        </li>
+                        <li class="flex items-center justify-between text-sm">
+                            <span class="font-medium">VN / InShot Mobile Editors</span>
+                            <span class="text-xs bg-brand-sand px-2 py-0.5 rounded text-brand-muted">Expert</span>
+                        </li>
+                        <li class="flex items-center justify-between text-sm">
+                            <span class="font-medium">Meta Business Suite</span>
+                            <span class="text-xs bg-brand-sand px-2 py-0.5 rounded text-brand-muted">Expert</span>
+                        </li>
+                        <li class="flex items-center justify-between text-sm">
+                            <span class="font-medium">Google Suite Workflow</span>
+                            <span class="text-xs bg-brand-sand px-2 py-0.5 rounded text-brand-muted">Comfortable</span>
+                        </li>
+                        <li class="flex items-center justify-between text-sm">
+                            <span class="font-medium">Adobe Premiere Pro</span>
+                            <span class="text-xs bg-brand-sand px-2 py-0.5 rounded text-brand-muted">Basic</span>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="py-24 bg-brand-sand/30 relative">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="bg-white rounded-3xl border border-brand-sand p-8 md:p-12 lg:p-16 relative overflow-hidden shadow-sm">
+                
+                <!-- Graphic accent -->
+                <div class="absolute top-0 right-0 w-48 h-48 bg-brand-rose/5 rounded-full filter blur-2xl"></div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 relative z-10">
+                    
+                    <!-- Left info -->
+                    <div class="lg:col-span-6 space-y-6">
+                        <span class="text-xs font-semibold uppercase tracking-widest text-brand-rose">Connection Hub</span>
+                        <h2 class="font-serif text-4xl font-bold text-brand-charcoal leading-tight">Let's create something memorable.</h2>
+                        <p class="text-brand-muted text-sm leading-relaxed max-w-sm">
+                            Ready to take your social presence to the absolute top tier? Looking for a strategic, articulate PR voice? Reach out directly.
+                        </p>
+
+                        <!-- Contact Actions -->
+                        <div class="space-y-4 pt-4">
+                            <!-- Email -->
+                            <div class="flex items-center gap-4">
+                                <span class="w-10 h-10 rounded-full bg-brand-sand/50 flex items-center justify-center text-brand-rose"><i class="fa-solid fa-envelope"></i></span>
+                                <div>
+                                    <span class="block text-[10px] text-brand-muted uppercase tracking-wider">Email Address</span>
+                                    <div class="flex items-center gap-2">
+                                        <a href="mailto:jaanvi9pareek@gmail.com" class="text-sm font-semibold hover:text-brand-rose transition-colors">jaanvi9pareek@gmail.com</a>
+                                        <button onclick="copyToClipboard('jaanvi9pareek@gmail.com')" class="text-xs text-brand-muted hover:text-brand-rose transition-colors" title="Copy to clipboard">
+                                            <i class="fa-regular fa-copy"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Phone -->
+                            <div class="flex items-center gap-4">
+                                <span class="w-10 h-10 rounded-full bg-brand-sand/50 flex items-center justify-center text-brand-rose"><i class="fa-solid fa-phone"></i></span>
+                                <div>
+                                    <span class="block text-[10px] text-brand-muted uppercase tracking-wider">Call or WhatsApp</span>
+                                    <a href="tel:+916367573171" class="text-sm font-semibold hover:text-brand-rose transition-colors">+91 6367573171</a>
+                                </div>
+                            </div>
+
+                            <!-- Instagram -->
+                            <div class="flex items-center gap-4">
+                                <span class="w-10 h-10 rounded-full bg-brand-sand/50 flex items-center justify-center text-brand-rose"><i class="fa-brands fa-instagram"></i></span>
+                                <div>
+                                    <span class="block text-[10px] text-brand-muted uppercase tracking-wider">Instagram Brand</span>
+                                    <a href="https://instagram.com/notyourrinfluencerr" target="_blank" class="text-sm font-semibold hover:text-brand-rose transition-colors">@notyourrinfluencerr</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Quick Form (Simulated Interactive Connection) -->
+                    <div class="lg:col-span-6 bg-brand-cream p-6 rounded-2xl border border-brand-sand">
+                        <form onsubmit="handleFormSubmit(event)" class="space-y-4">
+                            <h3 class="font-serif text-lg font-bold">Quick Connection Request</h3>
+                            
+                            <div>
+                                <label for="form-name" class="block text-[10px] font-semibold uppercase tracking-wider text-brand-muted mb-1">Your Name</label>
+                                <input type="text" id="form-name" required class="w-full px-4 py-3 text-xs bg-white border border-brand-sand rounded-xl focus:outline-none focus:border-brand-rose" placeholder="E.g., Brand Founder, CMO">
+                            </div>
+
+                            <div>
+                                <label for="form-email" class="block text-[10px] font-semibold uppercase tracking-wider text-brand-muted mb-1">Your Email</label>
+                                <input type="email" id="form-email" required class="w-full px-4 py-3 text-xs bg-white border border-brand-sand rounded-xl focus:outline-none focus:border-brand-rose" placeholder="name@company.com">
+                            </div>
+
+                            <div>
+                                <label for="form-message" class="block text-[10px] font-semibold uppercase tracking-wider text-brand-muted mb-1">Project Details</label>
+                                <textarea id="form-message" rows="3" required class="w-full px-4 py-3 text-xs bg-white border border-brand-sand rounded-xl focus:outline-none focus:border-brand-rose" placeholder="E.g., Looking for social growth strategy or PR execution..."></textarea>
+                            </div>
+
+                            <button type="submit" class="w-full py-3 bg-brand-charcoal text-white rounded-xl text-xs font-semibold uppercase tracking-wider hover:bg-brand-rose transition-all flex items-center justify-center gap-2">
+                                <span>Send Direct Inquiry</span>
+                                <i class="fa-solid fa-paper-plane text-[10px]"></i>
+                            </button>
+                            
+                            <div id="form-feedback" class="text-xs text-green-600 font-semibold text-center hidden pt-2">
+                                <i class="fa-solid fa-circle-check"></i> Inquiry simulation complete! Thank you for connecting.
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-12 border-t border-brand-sand">
+        <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0 text-xs text-brand-muted">
+            <div class="font-serif font-bold text-brand-charcoal">
+                JAANVI PAREEK
+            </div>
+            <div>
+                &copy; 2026 Jaanvi Pareek. Crafted for Modern Growth.
+            </div>
+            <div class="flex space-x-4">
+                <a href="https://linkedin.com" target="_blank" class="hover:text-brand-rose transition-colors" aria-label="LinkedIn profile"><i class="fa-brands fa-linkedin text-base"></i></a>
+                <a href="https://instagram.com/notyourrinfluencerr" target="_blank" class="hover:text-brand-rose transition-colors" aria-label="Instagram profile"><i class="fa-brands fa-instagram text-base"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- INTERACTIVE SCRIPTS -->
+    <script>
+        // Mobile Menu Toggle
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Filter Functionality for Case Studies
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const projectCards = document.querySelectorAll('.project-card');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Update active button state
+                filterBtns.forEach(b => {
+                    b.classList.remove('bg-brand-charcoal', 'text-white');
+                    b.classList.add('bg-brand-sand', 'text-brand-charcoal');
+                });
+                btn.classList.remove('bg-brand-sand', 'text-brand-charcoal');
+                btn.classList.add('bg-brand-charcoal', 'text-white');
+
+                const filterValue = btn.getAttribute('data-filter');
+
+                projectCards.forEach(card => {
+                    if (filterValue === 'all' || card.getAttribute('data-category') === filterValue) {
+                        card.classList.remove('hidden');
+                    } else {
+                        card.classList.add('hidden');
+                    }
+                });
+            });
+        });
+
+        // Modal Controls
+        function openModal(id) {
+            document.getElementById(`modal-${id}`).classList.remove('hidden');
+            document.body.classList.add('overflow-hidden');
+        }
+
+        function closeModal(id) {
+            document.getElementById(`modal-${id}`).classList.add('hidden');
+            document.body.classList.remove('overflow-hidden');
+        }
+
+        // Copy Email to Clipboard
+        function copyToClipboard(text) {
+            const tempInput = document.createElement('input');
+            tempInput.value = text;
+            document.body.appendChild(tempInput);
+            tempInput.select();
+            document.execCommand('copy');
+            document.body.removeChild(tempInput);
+            
+            // Temporary feedback alert
+            const toast = document.createElement('div');
+            toast.className = 'fixed bottom-6 right-6 bg-brand-charcoal text-white text-xs px-4 py-2.5 rounded-full shadow-lg z-50 animate-bounce';
+            toast.innerText = 'Copied to clipboard: ' + text;
+            document.body.appendChild(toast);
+            setTimeout(() => {
+                toast.remove();
+            }, 2500);
+        }
+
+        // Inquiry simulation feedback
+        function handleFormSubmit(event) {
+            event.preventDefault();
+            const feedback = document.getElementById('form-feedback');
+            feedback.classList.remove('hidden');
+            
+            // Clear fields
+            document.getElementById('form-name').value = '';
+            document.getElementById('form-email').value = '';
+            document.getElementById('form-message').value = '';
+
+            setTimeout(() => {
+                feedback.classList.add('hidden');
+            }, 5000);
+        }
+    </script>
+</body>
+</html>
